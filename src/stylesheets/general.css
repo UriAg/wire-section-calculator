@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*Estilizacion de todo lo que no sea un componente*/
+/*Container de entrada de datos*/
+.data-input-container{
+    -webkit-user-select: none;
+    background-color: #151313;
+    margin: auto;
+
+}
+
+/*Titulo de uso*/
+.use__title{
+    border-bottom: 3px dashed #167593;
+    color: #fff;
+    font-family: 'Lato', Roboto;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+/*Titulo electrificación*/
+.tension-title{
+    color: #fff;
+    font-family: 'Lato', Roboto;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+/*Titulo cañería*/
+.conduit-title{
+    color: #fff;
+    font-family: 'Lato', Roboto;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+/*Btn tensión*/
+.tension-selector-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+    
+}
+
+/*Btn cañería*/
+.conduit-selector-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+}
+
+/*Btn submit y clear*/
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+}
+
+/*Renderizado de datos*/
+
+.results__title{
+    color: #fff;
+    font-family: 'Lato', Roboto;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.results__title::before{
+    margin-right: 5px;
+    content: '\2193';
+}
+
+.results__title::after{
+    margin-left: 5px;
+    content: '\2193';
+}
+
+.data__output__general{
+    display: none;
+    -webkit-user-select: none;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.data__output__general--active{
+    -webkit-user-select: none;
+    margin: auto;
+    padding-top: 15px;
+}
+/*Termina*/

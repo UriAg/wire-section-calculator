@@ -1,0 +1,112 @@
+@import url('./general.css');
+
+.data-selector input{
+    display: none;
+}
+
+.data-selector label{
+    width: 10em;
+    height: 4em;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #45246e;
+    background-color: #7856a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+    transition: all .1s ease;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+/*Redondeo los botones*/
+
+.data-selector .monophasic{
+    border-radius: 10px 70px 10px 70px;
+}
+
+.data-selector .triphasic{
+    border-radius: 70px 10px 70px 10px;
+}
+
+.data-selector .buried{
+    border-radius: 10px 70px 10px 70px;
+}
+
+.data-selector .exterior{
+    border-radius: 10px;
+}
+
+.data-selector .air{
+    border-radius: 70px 10px 70px 10px;
+}
+/*Termina el redondeo*/
+
+.data-selector input{
+    visibility: hidden;
+}
+
+/*Mediaquerys tablet*/
+@media screen and (width>=476px) and (width<=683px){
+    .data-selector .exterior{
+        border-radius: 70px 10px 70px 10px;
+    }
+    .data-selector .air{
+        border-radius: 10px 10px 70px 70px;
+    }
+}
+
+/*Mediaquerys celular*/
+@media screen and (width<=475px){
+    /*Botones tension*/
+    .data-selector .monophasic{
+        border-radius: 70px 70px 10px 10px;
+    }
+    .data-selector .triphasic{
+        border-radius: 10px 10px 70px 70px;
+    }
+  
+    /*Botones cableado*/
+    .data-selector .exterior{
+        border-radius: 10px 10px 10px 10px;
+    }
+    .data-selector .air{
+        border-radius: 10px 10px 70px 70px;
+    }
+    .data-selector .buried{
+        border-radius: 70px 70px 10px 10px;
+    }
+}
+
+/*Cambio de estilos para selector*/
+.tension-selector-container .btn--active{
+        width: 10em;
+        height: 4em;
+        font-size: 1.3em;
+        font-weight: bold;
+        color: #8e4edc;
+        background-color: #482f66;
+        border: 2px solid #aa5412;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0px 5px 0px;
+}
+
+.conduit-selector-container .btn--active{
+    width: 10em;
+    height: 4em;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #8e4edc;
+    background-color: #482f66;
+    border: 2px solid #aa5412;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+}
+
+
+/*Termina*/

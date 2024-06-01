@@ -1,0 +1,67 @@
+@import url('./general.css');
+
+.control-button button{
+    border-style: none;
+    width: 10em;
+    height: 4em;
+    font-family: 'Lato', Roboto;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #45246e;
+    background-color: #7856a1;
+    transition: all .2s ease;
+    cursor: pointer;
+    margin: 5px 0px 5px 0px;
+}
+
+.control-button #submit{
+    border-radius: 50px 50px 50px 50px;
+}
+
+.control-button #clear{
+    border-radius: 50px 50px 50px 50px;
+}
+
+/*Mediaquerys tablet*/
+@media screen and (width<=722px){
+    .control-button #submit{
+        background-color: #126312;
+        color: #000;
+    }
+
+    .control-button #clear{
+        background-color: #631212;
+        color: #000;
+    }
+}
+
+/*Mediaquerys celular*/
+@media  screen and (width<=475px) {
+    .control-button #submit{
+        border-radius: 70px 70px 10px 10px;
+    }
+    .control-button #clear{
+        border-radius: 10px 10px 70px 70px;
+    }
+}
+
+/*Estilos hover*/
+.control-button button:active{
+    width: 9.9em;
+    height: 3.9em;
+}
+
+.control-button #submit:hover{
+    background-color: #126312;
+    color: #000;
+}
+
+.control-button #clear:hover{
+    background-color: #631212;
+    color: #000;
+}
+
+
+
+
+/*Termina*/
